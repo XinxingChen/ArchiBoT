@@ -10,6 +10,8 @@ Part03: TestYourIQ, ask ArchiBot to examine your IQ score.
 		<!-- Guess none would ask that silly question except myself. -->
 		<Model>
 			<Pattern>Who is AsteroidB612</Pattern>
+			<Pattern>Who is Asteroid</Pattern>
+			<Pattern>Who is Xing</Pattern>
 			<Response>
 			<Random>
 				<Item>A Bachelor of EA.:sgsmile:</Item>
@@ -27,7 +29,20 @@ Part03: TestYourIQ, ask ArchiBot to examine your IQ score.
 				<Item>A wayward trader who like to visit your inventory while you're sleeping.:bite:</Item>
 			</Random>
 			</Response>
-		</Model>		
+		</Model>
+		
+		<Model>
+			<Pattern>Bot feeding status</Pattern>
+			<Response>
+				<Random>
+					<Item>I promise that I won't easily get fat. :think:</Item>
+					<Item>I'm hungry cuz my greedy master doesn't feed me well. :cry:</Item>					
+					<Item>I've already eaten Archi out of house and home. :doubt:</Item>
+					<Item>Dear weeb, wanna invite me to lunch? :sgsmile:</Item>
+					<Item>Don't let me starve pls! :cry:</Item>
+				</Random>
+			</Response>
+		</Model>
 	 </Concept>
 	
 	<Concept Name="_TestYourIQ">
@@ -48,17 +63,12 @@ Part03: TestYourIQ, ask ArchiBot to examine your IQ score.
 	
 	 <Concept Name="_xing" User="steam-76561198339012887">
 		<!-- 
+		Purpose: Ask ArchiBot if she's hungry. Teach ArchiBot to sing some of my favorite songs.
 		Update: I found the Wanna join is already used in normal chat functions, so I have to modify the Q&A.
-		Ask ArchiBot if she's hungry.
-		Teach ArchiBot to sing some of my favorite songs.
-		Idk how to add some logic(e.g. Check Strings.BotStatus) to ask bot if she's farming or idling.
-		But I hope I could realize that after I study ASF and understand the logic well.
-		If ArchiBot is farming, return "I'm eating like a horse and working like a horse.:bite:"
-		If ArchiBot doesn't have any games to farm, return "My greedy master doesn't feed me well.:cry:"
+		Update: Bot hungry status is removed, add more items for different users.
 		-->
 		<Model>
 			<Pattern>Bot feeding status</Pattern>
-			<Pattern>Bot hungry status</Pattern>
 			<Response>
 				<Random>
 					<Item>I'm always happy to have dinner with you. :sgsmile:</Item>
